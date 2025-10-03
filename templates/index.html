@@ -1,0 +1,33 @@
+{% extends 'layout.html'  %}
+{% block content %}
+
+  <section class="sec-header">
+    <div class="header-container">
+      <img src="/static/images/WhatsApp Image 2025-09-12 at 23.01.54_34a62dd0.jpg" alt="House" class="house">
+      <h4>Découvrez nos annonces exclusives et trouvez votre maison idéale</h4>
+      <img src="/static/images/360_F_1176717943_hIyurT3Y8U1ZZVyOYg0EHpUDP1kdPlGb.jpg" alt="Development" class="dev">
+    </div>
+  </section>
+
+  <section class="about">
+<p class="about">
+  <span><big>Awal Tech Innovation</big></span> est un acteur majeur du secteur de la construction et des travaux publics en Afrique,<br> réalisant <span><big>des bâtiments et des infrastructures qui servent et renforcent les communautés et les régions locales.</big></span> <br>  
+  Forts de <span><big>l’expertise, de l’agilité et de l’engagement de nos équipes,</big></span><br> nous concevons, construisons et assurons la maintenance de projets dans divers secteurs, <br> notamment <span><big>le bâtiment, les travaux routiers et de terrassement, le génie civil, l’énergie, les relevés topographiques, <br> ainsi que le développement d’applications, de sites web et de bases de données.</big></span> 
+  Notre approche collaborative et centrée sur le client nous permet de <span><big>réaliser des projets innovants, durables et adaptés aux besoins spécifiques de chaque client.</big></span> <br>
+  En tant qu’entreprise responsable, nous nous engageons à <span><big>minimiser notre impact environnemental</big></span> et à <span><big>contribuer positivement aux communautés où nous opérons.</big></span> <br>
+  Découvrez comment <span><big>Awal Tech Innovation</big></span> peut transformer vos idées en réalité et bâtir un avenir meilleur pour l’Afrique.
+</p>
+  <br> 
+
+  <img src="/static/images/programming_background_with_person_working_with_codes_computer_23_2150010125_5c8bf96eea.webp" alt="" class="info-img">
+  </section>
+  <footer>
+    <div class="info">
+    <p>About us</p>
+    <p>our services</p>
+    <p><a href=" {{ url_for('contacts.contact')}} "> Contact Us</a></p>
+    <p>&copy; 2024 Awal Tech Innovation. All rights reserved.</p>
+    </div>
+  </footer>
+{% endblock %}
+
