@@ -1,15 +1,17 @@
 {% extends 'layout.html'  %}
 {% block content %}
 <link rel="stylesheet" href="/static/css/form.css">
-<section class="contant"> 
+<section class="contact-sec"> 
 <fieldset>
-  <form action="" method="post">
+  <form id="contactForm" action="" method="post">
     <legend>Contact Us</legend>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    <label for="message">Message:</label>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="message">Message:</label> 
     <textarea id="message" name="message" rows="4" required></textarea>
     <div class="btn">
       <button type="submit">Send</button>
@@ -17,4 +19,17 @@
 </form>
 </fieldset>
 </section>
+<p><a href="{{url_for('contact.view_messages')}}">View Messages</a></p>
+<div id="response"></div>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class="flashes">
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+<script src="/static/js/contact.js"></script>
 {% endblock %}

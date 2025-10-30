@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Admin - Contact Messages</h1>
+<link rel="stylesheet" href="/static/css/form.css">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Timestamp</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for message in messages %}
+        <tr>
+            <td>{{ message.id }}</td>
+            <td>{{ message.name }}</td>
+            <td>{{ message.phone }}</td>
+            <td>{{ message.email }}</td>
+            <td>{{ message.message }}</td>
+            <td>{{ message.timestamp }}</td>
+            <td>
+                <a href="{{ url_for('contact.reply_message', id=message.id) }}" class="btn btn-primary btn-sm">
+                    Reply
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

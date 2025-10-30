@@ -1,0 +1,21 @@
+{% extends 'layout.html'  %}
+{% block content %}
+<link rel="stylesheet" href="/static/css/form.css">
+<h1>Admin Reply Message Form</h1>
+<section class="contact-sec">
+<fieldset>
+  <form id="replyForm" action="" method="post">
+    <legend>Reply to Message</legend>
+    <label for="email">Recipient Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+    <label for="reply_message">Message:</label>
+    <textarea id="reply_message" name="reply_message" rows="4" required></textarea>
+    <div class="btn">
+      <button type="submit">Send Reply</button>
+    </div>
+</form>
+</fieldset>
+</section>
+{% endblock %}

@@ -1,18 +1,17 @@
 
 fieldset{
-  width: 90%;
+  width: 95%;
 }
 form {
   background-color: #f9f9f9;
 }
-.contant{
+.contact-sec{
 
   margin: 12px;
   display: flex;
   justify-content: center;
 } 
 input{
-  border: none;
   padding: 15px;
   width: 85%;
   margin: 5px;
@@ -32,6 +31,7 @@ textarea{
   text-align: center;
 }
 .btn button{
+  margin: 10px;
   padding: 10px 20px;
   background-color: #4CAF50;
   color: white;
@@ -39,3 +39,32 @@ textarea{
   border-radius: 4px;
   cursor: pointer;
 }
+
+p{
+  margin-top: 10px;
+  font-size: 18px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+
+}
+  tr, th, td {
+    border: 1.5px solid rgb(241, 222, 222);
+    padding: 12px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+   }
+   h1{
+    text-align: center;
+   }
